@@ -1,5 +1,90 @@
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		System.out.println("Hello, World!");
+		System.out.println("\nContoh 1: Variables dan Conditionals");
+		contohVariabelDanKondisional();
+
+		System.out.println("\nContoh 2: Array dan Looping");
+		contohArrayDanLooping();
+	}
+
+	public static void contohVariabelDanKondisional() {
+		String nama = "Budi";
+		int umur = 20;
+		double ipk = 3.75;
+		boolean mahasiswaAktif = true;
+
+		System.out.println("Nama: " + nama);
+		System.out.println("Umur: " + umur);
+		System.out.println("IPK: " + ipk);
+		System.out.println("Status: " + (mahasiswaAktif ? "Aktif" : "Tidak Aktif"));
+
+		System.out.print("Predikat: ");
+		if (ipk >= 3.50) {
+			System.out.println("Cum Laude");
+		} else if (ipk >= 3.00) {
+			System.out.println("Sangat Memuaskan");
+		} else if (ipk >= 2.75) {
+			System.out.println("Memuaskan");
+		} else {
+			System.out.println("Perlu Peningkatan");
+		}
+
+		System.out.print("Kategori: ");
+		if (umur < 17) {
+			System.out.println("Remaja");
+		} else if (umur <= 25) {
+			System.out.println("Dewasa Muda");
+		} else {
+			System.out.println("Dewasa");
+		}
+	}
+
+	public static void contohArrayDanLooping() {
+		int[] nilaiUjian = { 85, 92, 78, 95, 88 };
+		String[] mataKuliah = { "Matematika", "Fisika", "Pemrograman", "Basis Data", "Algoritma" };
+
+		System.out.println("Daftar Nilai:");
+		for (int i = 0; i < nilaiUjian.length; i++) {
+			System.out.println((i + 1) + ". " + mataKuliah[i] + ": " + nilaiUjian[i]);
+		}
+
+		int total = 0;
+		for (int nilai : nilaiUjian) {
+			total += nilai;
+		}
+		double rataRata = (double) total / nilaiUjian.length;
+
+		System.out.println("\nTotal nilai: " + total);
+		System.out.println("Rata-rata: " + rataRata);
+
+		int tertinggi = nilaiUjian[0];
+		int terendah = nilaiUjian[0];
+		int index = 1;
+
+		while (index < nilaiUjian.length) {
+			if (tertinggi < nilaiUjian[index]) {
+				tertinggi = nilaiUjian[index];
+			}
+			if (terendah > nilaiUjian[index]) {
+				terendah = nilaiUjian[index];
+			}
+			index++;
+		}
+
+		System.out.println("Nilai Tertinggi: " + tertinggi);
+		System.out.println("Nilai Terendah: " + terendah);
+
+		int jumlahLulus = 0;
+		int idx = 0;
+
+		do {
+			if (nilaiUjian[idx] >= 75) {
+				jumlahLulus++;
+			}
+			idx++;
+		} while (idx < nilaiUjian.length);
+
+		System.out.println("Jumlah mata kuliah yang lulus " + jumlahLulus + " dari " + mataKuliah.length);
 	}
 }
