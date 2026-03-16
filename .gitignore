@@ -4,3 +4,11 @@
 
 !README.md
 
+!Lab/
+!Tugas/
+
+Lab/**/.*
+Tugas/**/.*
+
+!Lab/**/.gitignore
+!Tugas/**/.gitignore

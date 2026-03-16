@@ -1,0 +1,5 @@
+!src/
+!src/*.java
+!*/src/*.java
+
+src/**/.*
