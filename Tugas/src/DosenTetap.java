@@ -21,6 +21,7 @@ public final class DosenTetap extends Dosen {
         super(nip, nama, tanggalLahir, tmtBekerja, gajiPokok, fakultas);
         this.nidn = nidn;
         this.bup = bup;
+        this.jabatan = "Dosen Tetap";
     }
 
     /******************** SELEKTOR ********************/
@@ -39,7 +40,7 @@ public final class DosenTetap extends Dosen {
         System.out.println("Nama          : " + getNama());
         System.out.println("Tanggal Lahir : " + getTanggalLahir());
         System.out.println("TMT Bekerja   : " + getTmtBekerja());
-        // TODO: System.out.println("Jabatan : Dosen Tetap");
+        System.out.println("Jabatan       : " + getJabatan());
         System.out.println("Fakultas      : " + getFakultas());
         // TODO: System.out.println("Masa Kerja : " + getMasaKerja());
         // TODO: System.out.println("Tanggal Pensiun : " + getTanggalPensiun());

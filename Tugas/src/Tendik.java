@@ -25,7 +25,7 @@ public final class Tendik extends Pegawai {
             Bidang bidang) {
         super(nip, nama, tanggalLahir, tmtBekerja, gajiPokok);
         this.bup = bup;
-        this.bidang = bidang;
+        this.jabatan = "Tendik";
     }
 
     /******************** SELEKTOR ********************/
@@ -43,7 +43,7 @@ public final class Tendik extends Pegawai {
         System.out.println("Nama          : " + getNama());
         System.out.println("Tanggal Lahir : " + getTanggalLahir());
         System.out.println("TMT Bekerja   : " + getTmtBekerja());
-        // TODO: System.out.println("Jabatan : Dosen Tetap");
+        System.out.println("Jabatan       : " + getJabatan());
         System.out.println("Bidang        : " + getBidang());
         System.out.println("Gaji Pokok    : " + getGajiPokok());
     }

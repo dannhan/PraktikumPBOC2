@@ -11,8 +11,7 @@ abstract class Pegawai {
     private String tanggalLahir;
     private String tmtBekerja;
     private String gajiPokok;
-
-    // private String jabatan;
+    protected String jabatan;
 
     public Pegawai(
             String nip, String nama, String tanggalLahir, String tmtBekerja, String gajiPokok) {
@@ -42,6 +41,10 @@ abstract class Pegawai {
 
     public String getGajiPokok() {
         return gajiPokok;
+    }
+
+    public String getJabatan() {
+        return jabatan;
     }
 
     abstract void printInfo();
