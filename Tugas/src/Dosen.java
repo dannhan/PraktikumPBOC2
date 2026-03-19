@@ -13,7 +13,7 @@ abstract class Dosen extends Pegawai {
             String nama,
             String tanggalLahir,
             String tmtBekerja,
-            String gajiPokok,
+            double gajiPokok,
             String fakultas) {
         super(nip, nama, tanggalLahir, tmtBekerja, gajiPokok);
         this.fakultas = fakultas;
