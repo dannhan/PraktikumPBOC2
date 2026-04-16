@@ -4,15 +4,15 @@ public class MPersegi {
 
         System.out.println("Persegi 1:");
         P1.printInfo();
-        System.out.println("Luas        : " + P1.getSisi() * P1.getSisi());
-        System.out.println("Keliling    : " + 4 * P1.getSisi());
+        System.out.println("Luas Persegi       : " + P1.getLuas());
+        System.out.println("Keliling Persegi   : " + P1.getKeliling());
 
         Persegi P2 = new Persegi(8, "Biru", "Dotted");
         P2.setSisi(10);
 
         System.out.println("\nPersegi 2:");
         P2.printInfo();
-        System.out.println("Luas        : " + P2.getSisi() * P2.getSisi());
-        System.out.println("Keliling    : " + 4 * P2.getSisi());
+        System.out.println("Luas Persegi       : " + P2.getLuas());
+        System.out.println("Keliling Persegi   : " + P2.getKeliling());
     }
 }

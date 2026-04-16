@@ -15,5 +15,16 @@ public class MLingkaran {
         System.out.println("Jari        : " + L2.getJari());
         System.out.println("Luas        : " + L2.getLuas());
         System.out.println("Keliling    : " + L2.getKeliling());
+
+        System.out.println("\nLuas L1 == Luas L2? " + L1.isEqualLuas(L2));
+
+        System.out.println("Jari L1 sebelum zoom in : " + L1.getJari());
+        System.out.println("Jari L2 sebelum zoom out : " + L2.getJari());
+
+        L1.zoomIn();
+        System.out.println("Jari L1 setelah zoom in : " + L1.getJari());
+
+        L2.zoomOut();
+        System.out.println("Jari L2 setelah zoom out : " + L2.getJari());
     }
 }
